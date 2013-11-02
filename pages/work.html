@@ -14,34 +14,43 @@
     having the menu in a sidebar?
     -->
         <div id="wrapper">
-            <div id="navcontainer">
-                <nav>
+            <div id="container">
+                <div id="navcontainer">
+                    <nav>
+                        <ul>
+                            <li><a id="home" href="../index.html">Home</a></li>
+                            <li><a id="work" href="pages/work.html" class="active">Work</a></li>
+                            <li><a id="about" href="about.html">About</a></li>
+                            <li><a id="contact" href="contact.html">Contact</a></li>
+                            <li><a id="blog" href="blog.html">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <aside>
+                    <header>Archive</header>
                     <ul>
-                        <li><a id="home" href="../index.html">Home</a></li>
-                        <li><a id="work" href="pages/work.html" class="active">Work</a></li>
-                        <li><a id="about" href="about.html">About</a></li>
-                        <li><a id="contact" href="contact.html">Contact</a></li>
-                        <li><a id="blog" href="blog.html">Blog</a></li>
+                        <li><a href"#">2013</a></li>  <!-- adding specific tags/ids to tags to sort -->
+                        <li><a href"#">2012</a></li>
+                        <li><a href"#">2011</a></li>
                     </ul>
-                </nav>
+                </aside>
             </div>
-            
-            <aside>
-                <header>Archive</header>
-                <ul>
-                    <li><a href"#">2013</a></li>  <!-- adding specific tags to tags to sort? -->
-                    <li><a href"#">2012</a></li>
-                    <li><a href"#">2011</a></li>
-                </ul>
-            </aside>
             
             <main>
                 <header>Work</header>
+                <section>
+                    <h3>Work done during 2013</h3>
+                    <div class="artcontainer">
+                        <img />
+                        <p class="arttagline"></p>    
+                    </div>    
+                </section>
+                <section>
+                    <h3>Work done during 2012</h3>
+                    
+                </section>
             
-                <div class="artcontainer">
-                    <img />
-                    <p class="arttagline"></p>    
-                </div>
             </main>
         </div>
     </body>
