@@ -10,6 +10,7 @@
     <body>
         <div id="wrapper">
             <div id="container">
+                <header><h1>Contact</h1></header>
                 <div id="navcontainer">
                     <nav>
                         <ul>
@@ -26,6 +27,51 @@
                 
             <main>
             <!-- contact form -->    
+             <h2 id="conthead">Get in touch</h2>
+             <h3 id="contacthead">Want to get in touch with me? Please fill out the form below or <a href="#sendmail">send me an e-mail</a> with the possibly required information.</h3>
+                    <form id="contactform" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="POST">
+                        <fieldset>
+                            <legend>Subject</legend>
+                            <label for="subject">Please choose a subject</label>
+                            <select id="subject" name="subject">
+                                <option value="artcommission">Art Commission Request</option>
+                                <option value="website">Website request</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <br/>
+                            <label for="title">Title:</label>
+                            <input id="title" type="text" placeholder="Please enter a title" />
+                            <br/>
+                            <label for="subject">Description:</label>
+                            <textarea id="subject" rows="6" cols="25" placeholder="Please describe why You're getting in contact with me and include eventual information."></textarea>
+                        </fieldset>
+                        
+                        
+                        <fieldset>
+                            <legend>Please choose a way of which You would like to be contacted</legend>
+                            <input type="checkbox" name="g1[]" value="by phone" /> <label>By Phone</label>
+                            <input type="tel" placeholder="Enter Phone Number" />
+                            <br/>
+                            <input type="checkbox" name="g1[]" value="by mail" /> <label>By Mail</label>
+                            <input type="email" placeholder="Enter E-Mail Adress" />
+                        </fieldset>
+                        <input id="sendbutton" type="submit" value="Send" />
+                    </form>
+                    
+            <h3 id="sendmail">Contact me by mail</h3>    
+                <p>If You would not like to use the contact form, you can simply <a href="mailto:email@example.com">send me an e-mail</a>, but then I would like to know some specific information.</p>
+                <ul>
+                    <li>Please state your matter in the subject field of the mail.
+                        <ul>
+                            <li>Art Commission Request</li>
+                            <li>Website Request</li>
+                            <li>Other</li>
+                        </ul>
+                    </li>
+                    <li>If You are asking for a commission of some sort, either art- or websitewise, please include some rough ideas of what you would want included.</li>
+                    <li>Please include a valid e-mail adress or phone number which I can use to get back to You.</li>
+                </ul>
+                
                 
             </main>
         </div>    
