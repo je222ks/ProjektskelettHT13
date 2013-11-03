@@ -58,7 +58,8 @@ body {
 
 #navcontainer {
     display: block;
-    width: 350px;
+    max-width: 350px;
+    min-width: 320px;
     height: 500px;
     background-image: url(pics/navcontainer.png);
     border-bottom-left-radius: 2%;
@@ -110,7 +111,7 @@ nav li a{
     letter-spacing: 0.1em;
     line-height: 225%;
     color: #222930;
-    text-shadow: 0px 1px 2px #c2eff3;
+    text-shadow: 0 1px 2px #c2eff3;
 }
 
 @media only screen and (max-width:480px){
@@ -132,4 +133,26 @@ p{
     margin-right: 10%;
 }
     
+}
+
+@media only screen and (max-width:320px){
+    
+#logo{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+} 
+    
+#navcontainer{
+    background: #222930;
+    margin: 0 auto;
+}
+    
+    
+p{
+    color: #222930;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 }
