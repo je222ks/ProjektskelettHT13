@@ -303,6 +303,7 @@ aside a{
 h1, h2, h3{
     text-align: center;
     margin-top: 10%;
+    color: #287077;
     text-shadow: 0 1px 1px white;
 } 
 
@@ -446,8 +447,8 @@ aside ul li{
 
 figure #aboutpg, #aboutpg img, #aboutpg figcaption{
     width: 250px;
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 2%;
+    margin-right: 2%;
 } 
 
 article{
@@ -530,23 +531,31 @@ footer{
 @media only screen and (min-width:481px){
     
 body {
-    background-color: white;
-    background-image: url(pics/bgpattern2.png);
+    background-color: #181818;
+    /* background-image: url(pics/bgtexture2.png); */
 }
 
 #wrapper{
     max-width: 1280px;
     position: relative;
     margin: 0 auto;
+    min-height: 99%;
+}
+
+#navcontainer{
+    margin-bottom: 20%;
 }
 
 main{ 
-    width: 62%;
-    margin-top: 5%;
-    margin-left: 2%;
+    max-width: 800px;
+    /* margin-top: 1%; */
+    margin-left: 0.5%;
     margin-bottom: 3%;
     float: left;
-    background: black;
+    background: #2e2e2e;
+    /* -moz-border-radius: 15px; -webkit-border-radius: 15px; -o-border-radius: 15px; -ms-border-radius: 15px; border-radius: 15px;  */
+    border-left: 5px solid rgba(78, 177, 186, 0.25);
+    border-right: 5px solid rgba(78, 177, 186, 0.25);
 } 
 
 
@@ -567,14 +576,35 @@ p.tagline{
     position: relative;
     top: 0;
     left: 0;
-    max-width: 480px;
+    width: 400px;
     background: #2e2e2e;
     float: left;
+    border-left: 5px solid rgba(78, 177, 186, 0.25);
+    border-right: 5px solid rgba(78, 177, 186, 0.25);
 }  
+#container:after{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    right: 10px;
+    left: auto;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    box-shadow: 0 15px 15px black;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
 
 main .artcontainer figure{
     display: block;
-    max-width: 350px;
+    width: 300px;
+    max-width: 30%;
     float: left;
     margin: 1%;
     background: #4eb1ba;
@@ -583,15 +613,30 @@ main .artcontainer figure{
 
 main .artcontainer img{
     display: block;
-    max-width: 350px;
+    width: 300px;
+    max-width: 30%;
 } 
 
 main .artcontainer figure figcaption{
     display: block;
-    max-width: 350px;
+    width: 300px;
+    max-width: 30%;
     text-align: center;
 }
 
+.right{
+    float: right;
+    margin-left: -5%;
+    margin-right: 10%;
+}
+
+.left{
+    float: left;
+}
+
+#archivemenu{
+    margin-bottom: 20%;
+}
 
 footer{
     min-width: 481px;
@@ -603,19 +648,22 @@ footer{
 
 
 h1{
-    position: absolute;
-    left: 350px;
+    color: #287077;
     top: 6%;
 }
+
+
 h3{
     padding: 6%;
     margin-top: 2%;
     margin-bottom: -2%;
     display: block;
 }
+
+article footer{
+    padding: 5%;
+    margin: 0 auto;
+    text-align: center;
+}
     
 }
-
-
-
-
