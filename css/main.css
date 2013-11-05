@@ -161,7 +161,8 @@ aside ul li{
     margin-top: 5%;
 } 
  
-#aboutpg, #aboutpg img, #aboutpg figcaption{
+.aboutpg figure, .aboutpg figure img, .aboutpg figure figcaption{
+    display: block;
     width: 250px;
     height: auto;
     margin-left: 10%;
@@ -338,7 +339,7 @@ p.tagline{
     color: #e9e9e9;
 }
 
-#about p, article p{
+#aboutme p, article p{
     margin-top: 5%;
     margin-bottom: 5%;
     color: #e9e9e9;
@@ -351,7 +352,7 @@ figcaption{
     color: white;
 } 
 
-#aboutpg figcaption{
+.aboutpg figcaption{
     font-size: 0.75em;
 }
 
@@ -449,7 +450,7 @@ aside ul li{
     margin-top: 5%;
 }
 
-figure #aboutpg, #aboutpg img, #aboutpg figcaption{
+figure .aboutpg, .aboutpg img, .aboutpg figcaption{
     width: 250px;
     margin-left: 2%;
     margin-right: 2%;
@@ -494,7 +495,7 @@ p{
     margin-right: 10%;
 }
 
-#about p, article p{
+#aboutme p, article p{
     margin-top: 5%;
     margin-bottom: 5%;
     color: #e9e9e9;
@@ -632,12 +633,13 @@ main .artcontainer figure figcaption{
 
 .right{
     float: right;
-    margin-left: -5%;
-    margin-right: 10%;
+    margin-bottom: 0.5%;
+    margin-right: 15%;
 }
 
 .left{
     float: left;
+    margin: 0.5%;
 }
 
 #archivemenu{
@@ -684,6 +686,31 @@ article footer{
     
 }
 
+@media screen and (max-width:1291px) and (min-width:481px){
+    
+ 
+    
+main .artcontainer figure{
+    margin: 0 auto;
+}
+    
+}
+
+
+@media screen and (max-width:712px) and (min-width:481px){
+    
+ 
+    
+main .artcontainer figure{
+    width: 80%;
+    max-width: 370px;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-bottom: 2%;
+}
+
+    
+}
 
 @media screen and (max-width:780px) and (min-width:481px){
 
@@ -731,7 +758,7 @@ main{
     width: 50%;
 }
 
-#aboutpg, #aboutpg img, #aboutpg figcaption{
+.aboutpg figure, .aboutpg figure img, .aboutpg figure figcaption{
     width: 200px;
     margin: 1%;
 }
