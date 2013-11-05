@@ -352,6 +352,19 @@ figcaption{
     color: white;
 } 
 
+.infomain{
+    margin: 0 auto;
+    text-align: center;
+    color: #e9e9e9;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    line-height: 125%;
+}
+.infomain a{
+    color: #e9e9e9;
+    font-style: italic;
+}
+
+
 .aboutpg figcaption{
     font-size: 0.75em;
 }
@@ -389,18 +402,24 @@ footer{
     padding: 5%;
 }
 
+#mainmain{
+    background: url(pics/flowbg.png);
+}
+
+#contentslide, #contentslide2{
+    margin: 5%;
+}
 
 
-
-#contentslide{
+#contentslide, #contentslide2{
    -moz-animation: move 1s ease-in-out 0.5s 2 alternate; 
    -webkit-animation: move 1s ease-in-out 0.5s 2 alternate; 
    animation: move 1s ease-in-out 0.5s 2 alternate;
 }
 
-#slide{
+#slide, #slide2{
     background: white;
-    border: 3px solid blue;
+    border: 3px solid #4eb1ba;
     box-shadow: 2px 2px 5px black;
     height: 200px;
     width: 400px;
@@ -409,19 +428,19 @@ footer{
     position: relative;
 }
 
-#slidecontainer{
+#slidecontainer, #slidecontainer2{
     overflow: hidden;
     height: 200px;
 }
 
-#slide ul{
+#slide ul, #slide2 ul{
     margin: 0;
     padding: 0;
     position: relative;
 }
 
 
-#slide li{
+#slide li, #slide2 li{
     height: 200px;
     width: 400px;
     position: absolute;
@@ -430,31 +449,31 @@ footer{
 }
 
 
-#slide .firstani {
+#slide .firstani, #slide2 .firstani {
     -webkit-animation: cycle 25s linear infinite;
     -moz-animation: cycle 25s linear infinite;	
     animation: cycle 25s linear infinite;		
 }
 
-#slide .secondani {
+#slide .secondani, #slide2 .secondani {
     -webkit-animation: cycletwo 25s linear infinite;
     -moz-animation: cycletwo 25s linear infinite;
     animation: cycletwo 25s linear infinite;	
 }
 
-#slide .thirdani {
+#slide .thirdani, #slide2 .thirdani {
     -webkit-animation: cyclethree 25s linear infinite;
     -moz-animation: cyclethree 25s linear infinite;
     animation: cyclethree 25s linear infinite;		
 }
 
-#slide .fourthani {
+#slide .fourthani, #slide2 .fourthani {
     -webkit-animation: cyclefour 25s linear infinite;
     -moz-animation: cyclefour 25s linear infinite;
     animation: cyclefour 25s linear infinite;		
 }
 
-#slide .fifthani {
+#slide .fifthani, #slide2 .fifthani {
     -webkit-animation: cyclefive 25s linear infinite;
     -moz-animation: cyclefive 25s linear infinite;
     animation: cyclefive 25s linear infinite;		
@@ -602,6 +621,9 @@ body{
     margin: 0 auto;
 }
 
+#contentslide, #contentslide2{
+    margin: 0;
+} 
    
    
 #contactform { 
@@ -634,6 +656,13 @@ article{
     -moz-border-radius: 10px; -webkit-border-radius: 10px; -o-border-radius: 10px; -ms-border-radius: 10px; border-radius: 10px;
     margin-top: 10%;
     margin-bottom: 5%;
+}
+
+
+#slide, #slide li, #slide2, #slide2 li{
+    width: 300px;
+}de, #slide li{
+    
 }
 
 h1, h2, h3{
@@ -986,7 +1015,4 @@ main .artcontainer figcaption{
 }
 
 #content a:after { 
-    content: "( " attr(href) " ) ";
-}
-
-}
+    content: "( " at
