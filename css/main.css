@@ -603,6 +603,7 @@ main{
     /* -moz-border-radius: 15px; -webkit-border-radius: 15px; -o-border-radius: 15px; -ms-border-radius: 15px; border-radius: 15px;  */
     border-left: 5px solid rgba(78, 177, 186, 0.25);
     border-right: 5px solid rgba(78, 177, 186, 0.25);
+    box-shadow: 1px 1px 1px black;
 } 
 
 main .artcontainer figure{
@@ -688,8 +689,6 @@ article footer{
 
 @media screen and (max-width:1291px) and (min-width:481px){
     
- 
-    
 main .artcontainer figure{
     margin: 0 auto;
 }
@@ -769,3 +768,52 @@ footer{
 }
 
 } 
+
+@media print {
+    
+nav { 
+    display: none;
+}
+
+body { 
+    background: white;
+    background-image: url(pics/portlogo4.svg); top:0; left: 0; 
+    background-repeat: no-repeat;
+}
+
+#container { 
+    display: none;
+} 
+
+#wrapper { 
+    margin-left: 0;
+    margin-top: 200px;
+}
+
+p{
+    color: black;
+}
+
+main .artcontainer figure{
+    float: none;
+
+    background: none;
+    margin-left: 5%;
+}
+
+main .artcontainer img{
+    width: auto;
+    margin: 0 auto;
+}
+
+
+main .artcontainer figcaption{
+    text-align: center;
+    color: black;
+}
+
+#content a:after { 
+    content: "( " attr(href) " ) ";
+}
+
+}
