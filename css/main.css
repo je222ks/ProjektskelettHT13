@@ -154,7 +154,7 @@ ul li .active {
 .artcontainer img{
     width: 200px;
 } 
-    
+
 aside ul li{
     text-align: center;
     line-height: 150%;
@@ -190,9 +190,9 @@ fieldset input, #contactform select{
     padding: 5px 10px 10px 10px; 
     margin: 0 0 20px 0; 
     margin: 0 0 20px 0; 
-        background: white;
-        border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; color: #f2f2f2; text-shadow: 0px -1px 0px #334f71; 
+    background: white;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; color: #f2f2f2; text-shadow: 0px -1px 0px #334f71; 
 }
 
 #contactform textarea{
@@ -201,11 +201,11 @@ fieldset input, #contactform select{
     padding: 5px 10px 10px 10px; 
     margin: 0 0 20px 0;
     margin: 0 0 20px 0; 
-        background: white;
-        -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; 
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
-        color: #f2f2f2; 
-        text-shadow: 0px -1px 0px #334f71;
+    background: white;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; 
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+    color: #f2f2f2; 
+    text-shadow: 0px -1px 0px #334f71;
 }
 
 #contactform input { 
@@ -246,7 +246,7 @@ fieldset input {
     padding: 10px 15px; 
     margin-left: 25%;
     margin-right: 25%;
-        background: linear-gradient(to bottom, #87eaec 0%,#1e5799 100%);
+    background: linear-gradient(to bottom, #87eaec 0%,#1e5799 100%);
 } 
  
  
@@ -606,8 +606,9 @@ main{
 
 main .artcontainer figure{
     display: block;
-    width: 300px;
-    max-width: 30%;
+    width: 48%;
+    max-width: 410px;
+    min-width: 200px;
     float: left;
     margin: 1%;
     background: #4eb1ba;
@@ -616,14 +617,16 @@ main .artcontainer figure{
 
 main .artcontainer img{
     display: block;
-    width: 300px;
-    max-width: 30%;
+    width: 100%;
+    max-width: 410px;
+    min-width: 200px;
 } 
 
 main .artcontainer figure figcaption{
     display: block;
-    width: 300px;
-    max-width: 30%;
+    width: 100%;
+    max-width: 410px;
+    min-width: 200px;
     text-align: center;
 }
 
@@ -639,6 +642,16 @@ main .artcontainer figure figcaption{
 
 #archivemenu{
     margin-bottom: 20%;
+}
+
+#contactform { 
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contactform textarea{
+    width: 50%;
+
 }
 
 footer{
