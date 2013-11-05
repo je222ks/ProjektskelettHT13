@@ -351,6 +351,10 @@ figcaption{
     color: white;
 } 
 
+#aboutpg figcaption{
+    font-size: 0.75em;
+}
+
 #contacthead{
     text-shadow: none;
 }
@@ -641,7 +645,7 @@ footer{
     min-width: 481px;
     max-width: 1280px;
     height: 10px;
-    color: #2e2e2e;
+    color: #e9e9e9;
     text-align: center;
 }
 
@@ -668,22 +672,19 @@ article footer{
 }
 
 
-@media screen and (max-width:780px){
+@media screen and (max-width:780px) and (min-width:481px){
 
 #container{
-    min-width: 20%;
+    width: 20%;
+    min-width: 200px;
 }
 
 h1{
     size: 20%;
 }
-
-#logo{
-    display: none;
-}
    
 main{
-    width: 70%;
+    width: 60%;
 }
 
 h1{
@@ -705,24 +706,26 @@ article footer{
     text-align: center;
 }
     
-}
+} 
 
-@media screen and (max-width:585px){
+@media screen and (max-width:585px) and (min-width:481px){
 
 #container{
     min-width: 200px;
 }
 
 main{
-    width: 45%;
+    width: 50%;
 }
 
-#aboutpg{
+#aboutpg, #aboutpg img, #aboutpg figcaption{
     width: 200px;
+    margin: 1%;
 }
 
 footer{
-    padding: 35%;
+    float: left;
+    width: 481px;
 }
 
-}
+} 
